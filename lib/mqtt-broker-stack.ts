@@ -24,7 +24,7 @@ export interface MqttBrokerStackProps extends cdk.StackProps {
 
 /**
  * Mosquitto MQTT broker on Ubuntu EC2 with Let's Encrypt TLS on 8883 and
- * username/password auth — matches B0RD firmware `mqtt.*` (ISRG Root X1).
+ * username/password auth — matches B0rd firmware `mqtt.*` (ISRG Root X1).
  *
  * Not AWS IoT Core device-cert auth.
  */
@@ -215,7 +215,7 @@ export class MqttBrokerStack extends cdk.Stack {
     });
     new cdk.CfnOutput(this, "DeviceSettingsHint", {
       value: `mqtt.enabled=true mqtt.host=${domainName} mqtt.port=8883 mqtt.tls=true mqtt.username=${username} mqtt.password=<secret>`,
-      description: "USB/SoftAP settings to subscribe a B0RD sign",
+      description: "USB/SoftAP settings to subscribe a B0rd sign",
     });
   }
 }
