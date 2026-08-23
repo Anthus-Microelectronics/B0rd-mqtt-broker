@@ -30,7 +30,7 @@ This is **not** AWS IoT Core device-certificate auth.
 ## Deploy
 
 ```bash
-git clone https://github.com/Anthus-Microelectronics/b0rd-mqtt-broker.git
+git clone https://github.com/Anthus-Microelectronics/B0rd-mqtt-broker.git
 cd b0rd-mqtt-broker
 npm ci
 npx cdk deploy \
@@ -80,7 +80,7 @@ Confirm: `settings get proc.mqtt.connected` → `true`.
 ## Configure agent hooks (Mac)
 
 Agent hooks read YAML from `~/.config/b0rd-hooks/config.yaml`. See
-[b0rd-scene-agent-monitor](https://github.com/Anthus-Microelectronics/b0rd-scene-agent-monitor)
+[b0rd-scene-agent-monitor](https://github.com/Anthus-Microelectronics/B0rd-scene-agent-monitor)
 and [B0rd-hooks](https://github.com/Anthus-Microelectronics/B0rd-hooks).
 
 ```yaml
@@ -140,8 +140,8 @@ npx cdk deploy \
 
 | Repo | Role |
 | --- | --- |
-| [B0RD](https://github.com/Anthus-Microelectronics/B0RD) | Firmware MQTT client + operator docs |
-| [b0rd-scene-agent-monitor](https://github.com/Anthus-Microelectronics/b0rd-scene-agent-monitor) | Host hook companion |
+| [B0RD](https://github.com/Anthus-Microelectronics/B0rd) | Firmware MQTT client + operator docs |
+| [b0rd-scene-agent-monitor](https://github.com/Anthus-Microelectronics/B0rd-scene-agent-monitor) | Host hook companion |
 | [B0rd-hooks](https://github.com/Anthus-Microelectronics/B0rd-hooks) | IDE hook installer |
 
 ## License
