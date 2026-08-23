@@ -1,0 +1,28 @@
+{
+  "name": "b0rd-mqtt-broker",
+  "version": "0.1.0",
+  "description": "AWS CDK stack: Mosquitto MQTT broker with TLS for B0RD Event transport",
+  "license": "MIT",
+  "bin": {
+    "b0rd-mqtt-broker": "bin/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "synth": "cdk synth"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "aws-cdk": "^2.1018.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.201.0",
+    "constructs": "^10.4.2"
+  }
+}
