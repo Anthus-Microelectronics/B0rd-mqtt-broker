@@ -1,7 +1,7 @@
 # b0rd-mqtt-broker
 
 Public AWS CDK stack for a **Mosquitto MQTT broker** with Let's Encrypt TLS on port
-**8883** and username/password authentication. B0RD signs, host CLIs, and agent
+**8883** and username/password authentication. B0rd signs, host CLIs, and agent
 hooks publish the same EventSet JSON over MQTT as they do over HTTP and USB.
 
 This broker is **general Event transport infrastructure** — not tied to the agent
@@ -63,7 +63,7 @@ aws secretsmanager get-secret-value \
 
 (Replace the secret id if you overrode `passwordSecretName`.)
 
-## Configure a B0RD sign
+## Configure a B0rd sign
 
 ```text
 settings set mqtt.enabled true
@@ -110,7 +110,7 @@ mosquitto_pub -h mqtt.example.com -p 8883 --tls-version tlsv1.2 \
 ```
 
 Broadcast topic `b0rd/v1/event` reaches every subscribed sign. Unicast:
-`b0rd/v1/B0RD-2308/event`.
+`b0rd/v1/B0rd-2308/event`.
 
 ## Topics
 
@@ -123,7 +123,7 @@ Default `topicPrefix` is `b0rd` (firmware setting `mqtt.topic_prefix`).
 
 ## Anthus desk reference deployment
 
-The Anthus test broker at `mqtt.b0rd.info` was originally deployed from the B0RD
+The Anthus test broker at `mqtt.b0rd.info` was originally deployed from the B0rd
 firmware repo; new deployments should use **this repository**:
 
 ```bash
@@ -140,7 +140,7 @@ npx cdk deploy \
 
 | Repo | Role |
 | --- | --- |
-| [B0RD](https://github.com/Anthus-Microelectronics/B0rd) | Firmware MQTT client + operator docs |
+| [B0rd](https://github.com/Anthus-Microelectronics/B0rd) | Firmware MQTT client + operator docs |
 | [b0rd-scene-agent-monitor](https://github.com/Anthus-Microelectronics/B0rd-scene-agent-monitor) | Host hook companion |
 | [B0rd-hooks](https://github.com/Anthus-Microelectronics/B0rd-hooks) | IDE hook installer |
 

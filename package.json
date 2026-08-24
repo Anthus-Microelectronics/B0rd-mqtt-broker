@@ -1,7 +1,7 @@
 {
   "name": "b0rd-mqtt-broker",
   "version": "0.1.0",
-  "description": "AWS CDK stack: Mosquitto MQTT broker with TLS for B0RD Event transport",
+  "description": "AWS CDK stack: Mosquitto MQTT broker with TLS for B0rd Event transport",
   "license": "MIT",
   "bin": {
     "b0rd-mqtt-broker": "bin/app.js"

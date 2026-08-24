@@ -1,7 +1,7 @@
 # Repository policy
 
 This repository is the **B0rd-mqtt-broker** MQTT infrastructure service in the B0rd repository family.
-Product branding remains **B0RD**; Rust packages and crates remain `b0rd-*`.
+Product branding remains **B0rd**; Rust packages and crates remain `b0rd-*`.
 
 ## Work tracking
 
